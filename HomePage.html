@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+</head>
+<body>
+        <div class="container rounded" id="header">
+            <div id="image">
+                <image id="logo_image" src="Logo.jpg"></image>
+            </div>
+                <p ><h1 align="center">Restaurant</h1></p>
+        </div>
+        <section>
+            <div class="container" id="rest_display">
+                <image id="rest_img" src="Restaurant.jpg"></image>
+            </div>
+            <div class="container rounded" id="Tabs">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a data-toggle="pill" href="#customer">Customer</a></li>
+                    <li><a data-toggle="pill" href="#owner">Owner</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="customer" class="tab-pane fade in active">
+                        <div id="customer_form">
+                            <h3 align="center"><b>Create A Reservation Here!</b></h3></br>
+                            <form >
+                                <div class="information" id="form_name">
+                                    <label><strong>Name: </strong></label>
+                                    <input type="text" placeholder="Enter Your Name" required/>
+                                </div>
+                                <div class="information" id="form_number">
+                                    <label><strong>Phone Number: </strong></label>
+                                    <input type="number" placeholder="Enter Your Phone Number" required/>
+
+                                    <div class="information" id="form_email">
+                                        <label><strong>Email ID: </strong></label>
+                                        <input type="email" placeholder="Enter Your Email Address" required/>
+                                    </div>
+                                    <section>
+                                        <div class="form_date_class" id="form-date">
+                                            <label ><strong>Date : </strong></label>
+                                            <input type="date" required/>
+                                        </div>
+                                        <div class="form_time_class"id="form-time">
+                                            <label><strong>Time : </strong></label>
+                                            <input type="time" required/>
+                                        </div>
+                                    </section>
+                                    <section>
+                                        <div id="people_number">
+                                            <label><strong>Number of People: </strong></label>
+                                            <input type="number" placeholder="0" required/>
+                                        </div>
+                                        <div id="form_event">
+                                            <label><strong>Special Event (if any): </strong></label>
+                                            <input type="text" placeholder="eg: Birthday Celebration"/>
+                                        </div>
+                                    </section>
+                                    <div id="reserve_button">
+                                        <button type="submit" id="btn1" class="btn btn-primary">Reserve</button>
+                                </div>    </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="owner" class="tab-pane fade">
+                        <h3><b>Login</b></h3>
+                        <form class="login_info">
+                            <div>
+                                <label><strong>Username</strong></label>
+                                <input type="text" placeholder="Enter Username" required/>
+                            </div>
+                            <div>
+                                <label><strong>Password</strong></label>
+                                <input type="password" placeholder="Enter Password" required/>
+                            </div>
+                            <div>
+                                <button type="submit" id="btn2" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
