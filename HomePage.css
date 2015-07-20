@@ -37,7 +37,15 @@
 }
 
 h1{
+      font-style: italic;
+      color: white;
+  }
+
+h4{
+    display:inline;
+    text-align: right ;
     font-style: italic;
+    margin-left:45em;
     color: white;
 }
 
@@ -146,7 +154,7 @@ h1{
     width: 17.5em;
 }
 
-.btn-primary{
+/*.btn-primary{
     padding-left: 2em;
     padding-right: 2em;
     margin-top: 2.5em;
@@ -154,7 +162,7 @@ h1{
     background: #00BFFF;
     border-color: #00BFFF;
     border-radius: 20px;
-}
+}*/
 
 #btn1:hover, #btn2:hover{
      background: #00BFFF;
@@ -185,5 +193,162 @@ ul.nav.nav-pills.nav-justified a{
     margin-bottom: 6px;
     width: 100%;
 }
+
+#forgot{
+    margin-top: 3em;
+    margin-left: 16em;
+}
+
+@media (min-width: 512px) {
+
+    #header{
+        background-color: #00BFFF;
+        height: 6em;
+        width: 52.5em;
+        padding-bottom: 5px;
+        margin: 5px;
+    }
+
+    #rest_img{
+        height:50em;
+        width:22em;
+        border-radius: 20px;
+    }
+
+    #Tabs{
+        margin-top: 10px;
+        margin-left: 24em;
+        border: 2px solid #00BFFF;
+        border-radius: 20px;
+        height: 50em;
+        width: 27em;
+    }
+
+   .form_date_class{
+        float: none;
+    }
+
+    #people_number{
+        float: none;
+    }
+
+    .btn-primary{
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-top: 2.5em;
+        margin-left: 10em;
+        background: #00BFFF;
+        border-color: #00BFFF;
+        border-radius: 20px;
+    }
+
+    #forgot{
+        margin-top: 3em;
+        margin-left: 10em;
+    }
+
+
+
+}
+@media (min-width: 768px) {
+
+    #header{
+        background-color: #00BFFF;
+        height: 6em;
+        width: 70.5em;
+        padding-bottom: 5px;
+        margin: 5px;
+    }
+    #rest_img{
+        height:40em;
+        width:28em;
+        border-radius: 20px;
+    }
+
+    #Tabs{
+        margin-top: 10px;
+        margin-left: 30em;
+        border: 2px solid #00BFFF;
+        border-radius: 20px;
+        height: 40em;
+        width: 40em;
+    }
+
+    .form_date_class{
+        float: left;
+    }
+
+    #people_number{
+        float: left;
+    }
+
+    .btn-primary{
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-top: 2.5em;
+        margin-left: 16em;
+        background: #00BFFF;
+        border-color: #00BFFF;
+        border-radius: 20px;
+    }
+
+    #forgot{
+        margin-top: 3em;
+        margin-left: 16em;
+    }
+
+
+
+
+}
+@media (min-width: 1024px) {
+
+    #header{
+        background-color: #00BFFF;
+        height: 6em;
+        width: 96em;
+        padding-bottom: 5px;
+        margin: 5px;
+    }
+
+    #rest_img{
+        height:40em;
+        width:50em;
+        border-radius: 20px;
+    }
+
+    #Tabs{
+        margin-top: 10px;
+        margin-left: 55em;
+        border: 2px solid #00BFFF;
+        border-radius: 20px;
+        height: 40em;
+        width: 40em;
+    }
+
+    .form_date_class{
+        float: left;
+    }
+
+    #people_number{
+        float: left;
+    }
+    .btn-primary{
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-top: 2.5em;
+        margin-left: 16em;
+        background: #00BFFF;
+        border-color: #00BFFF;
+        border-radius: 20px;
+    }
+    #forgot{
+        margin-top: 3em;
+        margin-left: 16em;
+    }
+
+
+}
+
 
 

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Owner Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="OwnerHomePage.css">
+</head>
+<body>
+    <div class="container rounded" id="header">
+        <div id="image">
+            <image id="logo_image" src="Logo.jpg"></image>
+        </div>
+        <p ><h1 align="center">Restaurant</h1></p>
+       
+    </div>
+    <div class="container rounded" id="owner_tabs">
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a data-toggle="pill" href="#reservation_list"><span class="glyphicon glyphicon-calendar"></span>        List of Reservations</a></li>
+            <li><a data-toggle="tab" href="#seating"><span class="glyphicon glyphicon-th"></span>       Seating Area</a> </li>
+            <li><a data-toggle="tab" href="#profile"><span class="glyphicon glyphicon-list"></span>     Profile</a> </li>
+            <li><a data-toggle="tab" href="#settings"><span class="glyphicon glyphicon-cog"></span>     Settings</a> </li>
+            <li><a data-toggle="tab" href="#contact_list"><span class="glyphicon glyphicon-user"></span>        Contacts</a> </li>
+        </ul>
+        <div class="tab-content">
+            <div id="reservation_list" class="tab-pane fade in active">
+                <div>
+                    <input type="search" id="search_bar" placeholder="   Search for a Reservation" >
+                    <button type="submit" id="search_btn" class="btn btn-primary">Search</button>
+                </div>
+
+                <div id="reservation_list_table">
+                    <table>
+                        <tr>
+                            <th>Reservation No.</th>
+                            <th>Full Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Confirmation Code</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Anukriti Mishra</td>
+                            <td>7/22/2015</td>
+                            <td>7:00 pm</td>
+                            <td>C5493</td>
+                            <td><button type="submit" id="details_btn1" class="btn btn-primary ">Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Anukriti Mishra</td>
+                            <td>7/22/2015</td>
+                            <td>7:00 pm</td>
+                            <td>C5493</td>
+                            <td><button type="submit" id="details_btn2" class="btn btn-primary ">Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Anukriti Mishra</td>
+                            <td>7/22/2015</td>
+                            <td>7:00 pm</td>
+                            <td>C5493</td>
+                            <td><button type="submit" id="details_btn3" class="btn btn-primary ">Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Anukriti Mishra</td>
+                            <td>7/22/2015</td>
+                            <td>7:00 pm</td>
+                            <td>C5493</td>
+                            <td><button type="submit" id="details_btn4" class="btn btn-primary ">Details</button></td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+            </div>
+            <div id="seating" class="tab-pane fade">
+                <table>
+                    <tr>
+                        <th>Table No.</th>
+                        <th>Table Size</th>
+                        <th>Since</th>
+                        <th>Status</th>
+                        <th>Confirmation Code</th>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>4</td>
+                        <td>12:00 pm</td>
+                        <td>Occupied</td>
+                        <td><a>C5493</a></td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>4</td>
+                        <td>12:00 pm</td>
+                        <td>Occupied</td>
+                        <td><a>C5493</a></td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>4</td>
+                        <td>12:00 pm</td>
+                        <td>Occupied</td>
+                        <td><a>C5493</a></td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>4</td>
+                        <td>12:00 pm</td>
+                        <td>Occupied</td>
+                        <td><a>C5493</a></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div id="profile" class="tab-pane fade">
+                <form>
+                    <table id="profile_form">
+                        <tr>
+                            <th>Restaurant Name:</th>
+                            <td><input type="text" placeholder="Restaurant" required disabled/></td>
+                            <td><button type="submit" id="edit_btn1" class="btn btn-primary">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>Contact Number 1:</th>
+                            <td><input type="tel" placeholder="+1-704-999-9999" required disabled/></td>
+                            <td><button type="submit" id="edit_btn2" class="btn btn-primary ">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>Contact Number 2:</th>
+                            <td><input type="tel" placeholder="+1-704-888-8888" required disabled/></td>
+                            <td><button type="submit" id="edit_btn3" class="btn btn-primary ">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>Email Id 1:</th>
+                            <td><input type="email" placeholder="email1@restaurant.com" required disabled/></td>
+                            <td><button type="submit" id="edit_btn4" class="btn btn-primary ">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>Email Id 2:</th>
+                            <td><input type="email" placeholder="email2@restaurant.com" required disabled/></td>
+                            <td><button type="submit"id="edit_btn5" class="btn btn-primary ">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>Address:</th>
+                            <td><input type="text" placeholder="some address" required disabled/></td>
+                            <td><button type="submit" id="edit_btn6" class="btn btn-primary ">Edit</button></td>
+                        </tr>
+                    </table>
+
+                </form>
+
+            </div>
+            <div id="settings" class="tab-pane fade">
+
+                <form>
+                    <table id="settings_form">
+                        <tr>
+                            <th>Restaurant Days:</th>
+                            <td><input type="text" placeholder="Tuesday to Saturday" required disabled/></td>
+                            <td><button type="submit" id="edit_btn7" class="btn btn-primary">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>Weekday Timings:</th>
+                            <td><input type="tel" placeholder="10:00 am to 10:00 pm" required disabled/></td>
+                            <td><button type="submit" id="edit_btn8" class="btn btn-primary ">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>Weekend Timings</th>
+                            <td><input type="tel" placeholder="9:00am to 11:00 pm" required disabled/></td>
+                            <td><button type="submit" id="edit_btn9" class="btn btn-primary ">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>Auto Assign</th>
+                            <td><input type="email" placeholder="Disabled" required disabled/></td>
+                            <td><button type="submit" id="edit_btn10" class="btn btn-primary ">Edit</button></td>
+                        </tr>
+                    </table>
+
+                </form>
+
+            </div>
+            <div id="contact_list" class="tab-pane fade">
+
+                <table>
+                    <tr>
+                        <th>Index No.</th>
+                        <th>Name</th>
+                        <th>Contact Number</th>
+                        <th>Email ID</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Anukriti Mishra</td>
+                        <td>+1-704-999-3434</td>
+                        <td>anukriti_mishra@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Anukriti Mishra</td>
+                        <td>+1-704-999-3434</td>
+                        <td>anukriti_mishra@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Anukriti Mishra</td>
+                        <td>+1-704-999-3434</td>
+                        <td>anukriti_mishra@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
